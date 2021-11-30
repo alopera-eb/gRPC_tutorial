@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service overcookedService {
+  // Standard heartbeat endpoint to confirm the service is operational
+  rpc GetRestaurantStats (RestaurantStatsRequest) returns (RestaurantStatsResponse) {}
+}
+
+
+message RestaurantStatsRequest {}
+
+message RestaurantStatsResponse {
+    
+}

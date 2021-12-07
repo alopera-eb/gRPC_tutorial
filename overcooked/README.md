@@ -1,13 +1,13 @@
 # gRPC Tutorial - Overcooked gRPC!
 
 
-## Useful Commands
+## Useful Commands
 Generate grpc code:
 ````
 python -m grpc_tools.protoc -I../../protos --python_out=. --grpc_python_out=. ../../protos/route_guide.proto
 ````
 
-## Overcooked gRPC
+## Overcooked gRPC
 <img src="https://cdn02.nintendo-europe.com/media/images/06_screenshots/games_5/nintendo_switch_download_software_2/nswitchds_overcookedallyoucaneat/NSwitchDS_OvercookedAllYouCanEat_05.jpg">
 
 ### Server Calls
@@ -26,7 +26,7 @@ python -m grpc_tools.protoc -I../../protos --python_out=. --grpc_python_out=. ..
 - **initGame(availableTime, availableDishes)**:
     - return ok
 
-### Data Formats
+### Data Formats
 ```
 restaurantStats {
     dishesSold: {}

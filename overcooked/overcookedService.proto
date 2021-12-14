@@ -1,13 +1,35 @@
 syntax = "proto3";
 
-service overcookedService {
-  // Standard heartbeat endpoint to confirm the service is operational
-  rpc GetRestaurantStats (RestaurantStatsRequest) returns (RestaurantStatsResponse) {}
+service restaurantService {
+  rpc getAvailableDishes (emptyRequest) returns (availableDishesResponse);
+  rpc cakeOrder (emptyRequest) returns (orderResponse);
+  rpc getRecipeInfo (recipeInfoRequest) returns (recipeInfoResponse);
 }
 
 
-message RestaurantStatsRequest {}
+message emptyRequest {}
 
-message RestaurantStatsResponse {
-    
+message availableDishesResponse {
+  repeated DishInfo dishInfo = 1;
+}
+
+message DishInfo {
+  string dishName = 1;
+  repeated string ingredients = 2;
+  int32 dishPrice = 3;
+}
+message recipeInfoRequest {
+  string recipeName = 1;
+}
+
+message recipeInfoResponse {
+  string imageUrl = 1;
+  repeated string ingredients = 2;
+  int32 difficulty = 3;
+  int32 price = 4;
+}
+
+message orderResponse {
+  string imageUrl = 1;
+  int32 price = 2;
 }

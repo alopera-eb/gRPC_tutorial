@@ -22,14 +22,14 @@ RECIPES_DATA = {
         },
     "sushi":
         {
-            "imageUrl": "",
+            "imageUrl": "https://static.wikia.nocookie.net/overcooked/images/e/e1/O2_Recipe_Sushi.jpg/revision/latest/scale-to-width-down/883?cb=20180828203905",
             "ingredients": ["fish", "rice", "chicken"]
             "difficulty": 3,
             "price": 16
         },
     "salad":
         {
-            "imageUrl": "",
+            "imageUrl": "https://static.wikia.nocookie.net/overcooked/images/7/7e/Salad.png/revision/latest/scale-to-width-down/128?cb=20180830221157",
             "ingredients": ["lettuce", "tomato"]
             "difficulty": 1,
             "price": 8
